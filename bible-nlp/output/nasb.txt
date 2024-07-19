@@ -1,0 +1,21 @@
+Top 20 most common words - NASB:
+jesus: 278
+will: 215
+father: 154
+know: 134
+when: 115
+world: 102
+things: 91
+saying: 82
+answered: 82
+disciples: 78
+love: 68
+sent: 66
+does: 66
+jews: 66
+believe: 64
+life: 62
+heard: 57
+truly: 56
+whom: 53
+peter: 52

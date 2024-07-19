@@ -1,0 +1,21 @@
+Top 20 most common words - ASV:
+jesus: 284
+will: 215
+father: 153
+therefore: 147
+know: 134
+when: 117
+world: 104
+things: 96
+answered: 84
+disciples: 81
+sent: 69
+jews: 69
+believe: 67
+life: 63
+love: 62
+went: 59
+heard: 54
+peter: 52
+whom: 52
+doesn: 51

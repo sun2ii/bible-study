@@ -1,0 +1,21 @@
+Top 20 most common words - AMP:
+jesus: 590
+unto: 454
+father: 320
+will: 305
+when: 260
+know: 249
+shall: 215
+world: 215
+thou: 186
+disciples: 162
+things: 158
+answered: 155
+life: 140
+jews: 136
+love: 136
+sent: 134
+believe: 134
+went: 127
+saith: 116
+whom: 115
