@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-3342
+334234
 ## 1) 2 Timothy 3:16 - Introduction to the Bible
   "All Scripture is inspired by God and  
   profitable for teaching, for reproof,     
@@ -20,8 +20,6 @@
   "In the beginning was the Word, and the Word was with God, and the Word was God And the Word became flesh and dwelt among us, 
   and we saw His glory, glory as of the only begotten from the Father, full of grace and truth."
 
----------------------------------------------------------------------------------------------------------------------------------
-3424
 ## 5) 1 Corinthians 15:3-4 - The Work of Christ   
   "For I delivered to you as of first importance what I also received,   
   that Christ died for our sins according to the Scriptures, and that He was buried, 
@@ -33,9 +31,10 @@
   For we are His workmanship, created in Christ Jesus for good works,   
   which God prepared beforehand so that we would walk in them."
    
+---------------------------------------------------------------------------------------------------------------------------------
+1431331
 ## 7) John 14:16 - The Person and Ministry of the Holy Spirit   
-  "I will ask the Father, and He will give you another Helper,    
-  that He may be with you forever."   
+  "I will ask the Father, and He will give you another Helper, that He may be with you forever."   
    
 ## 8) Phillippians 4:6-7 - Prayer and the Believer   
   "Be anxious for nothing, but in everything by prayer and supplication with thanksgiving   
@@ -43,8 +42,6 @@
   And the peace of God, which surpasses all comprehension,     
   will guard your hearts and minds in Christ Jesus."   
 
----------------------------------------------------------------------------------------------------------------------------------
-31331
 ## 9) Hebrews 10:24-25 - The Church: Fellowship and Worship   
   "And let us consider how to stimulate one another to love and good deeds,   
   Not forsaking our own assembling together, as is the habit of some,   
