@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bible Study Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.min.css">
+  <style>
+    :root {
+      --theme-color: #4a5568;
+      --sidebar-width: 280px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Bible Study',
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      search: {
+        placeholder: 'Search...',
+        noData: 'No results',
+        depth: 3
+      },
+      auto2top: true,
+      homepage: 'README.md'
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+</body>
+</html>
