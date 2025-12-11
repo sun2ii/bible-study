@@ -10,11 +10,177 @@
       --theme-color: #4a5568;
       --sidebar-width: 280px;
     }
+
+    /* Dark theme */
+    [data-theme="dark"] {
+      --base-background-color: #1a1a2e;
+      --base-color: #f4f4f5;
+      --theme-color: #60a5fa;
+      --sidebar-background: #16213e;
+      --sidebar-nav-link-color: #d4d4d8;
+      --sidebar-nav-link-color--active: #60a5fa;
+      --cover-background-color: #1a1a2e;
+      --code-theme-background: #0f0f23;
+      --code-theme-text: #e4e4e7;
+      --code-inline-background: #27272a;
+      --code-inline-color: #f4f4f5;
+      --blockquote-background: #27272a;
+      --notice-tip-background: #1e3a5f;
+      --heading-color: #fafafa;
+      --strong-color: #fafafa;
+      --heading-h1-color: #60a5fa;
+      --heading-h2-color: #93c5fd;
+    }
+
+    [data-theme="dark"] code {
+      color: #e4e4e7 !important;
+    }
+
+    [data-theme="dark"] pre {
+      color: #d4d4d8 !important;
+    }
+
+    [data-theme="dark"] table {
+      background: #1e1e2e !important;
+    }
+
+    [data-theme="dark"] table tr {
+      background: #1e1e2e !important;
+    }
+
+    [data-theme="dark"] table tr:nth-child(2n) {
+      background: #262636 !important;
+    }
+
+    [data-theme="dark"] table td,
+    [data-theme="dark"] table th {
+      color: #e4e4e7 !important;
+      border-color: #3f3f5a !important;
+    }
+
+    [data-theme="dark"] table th {
+      background: #2d2d44 !important;
+      color: #f4f4f5 !important;
+    }
+
+    [data-theme="dark"] .search {
+      background: #16213e !important;
+      border-color: #3f3f5a !important;
+    }
+
+    [data-theme="dark"] .search input {
+      background: #1e1e2e !important;
+      color: #f4f4f5 !important;
+      border-color: #3f3f5a !important;
+    }
+
+    [data-theme="dark"] .search input::placeholder {
+      color: #a1a1aa !important;
+    }
+
+    [data-theme="dark"] .matching-post {
+      background: #1e1e2e !important;
+      border-color: #3f3f5a !important;
+    }
+
+    [data-theme="dark"] .matching-post .search-keyword {
+      color: #60a5fa !important;
+    }
+
+    [data-theme="dark"] .sidebar,
+    [data-theme="dark"] .sidebar-nav {
+      background: #16213e !important;
+    }
+
+    [data-theme="dark"] .sidebar-toggle,
+    [data-theme="dark"] .sidebar-toggle-button,
+    [data-theme="dark"] button.sidebar-toggle {
+      background: #16213e !important;
+      background-color: #16213e !important;
+    }
+
+    [data-theme="dark"] .sidebar-toggle span,
+    [data-theme="dark"] .sidebar-toggle-button span {
+      background: #e4e4e7 !important;
+    }
+
+    [data-theme="dark"] .docsify-sidebar-toggle {
+      background: #16213e !important;
+    }
+
+    [data-theme="dark"] aside.sidebar ~ button,
+    [data-theme="dark"] body > button:not(.theme-toggle) {
+      background: #16213e !important;
+      background-color: #16213e !important;
+      border: none !important;
+    }
+
+    [data-theme="dark"] .app-nav {
+      background: #1a1a2e !important;
+    }
+
+    [data-theme="dark"] .search .results-panel {
+      background: #1e1e2e !important;
+    }
+
+    [data-theme="dark"] .search .clear-button {
+      color: #a1a1aa !important;
+    }
+
+    /* Theme toggle button */
+    .theme-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 999;
+      background: var(--theme-color);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+    <span id="theme-icon">🌙</span>
+  </button>
   <div id="app"></div>
   <script>
+    // Theme toggle
+    function toggleTheme() {
+      const html = document.documentElement;
+      const icon = document.getElementById('theme-icon');
+      if (html.getAttribute('data-theme') === 'dark') {
+        html.removeAttribute('data-theme');
+        icon.textContent = '🌙';
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.setAttribute('data-theme', 'dark');
+        icon.textContent = '☀️';
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
+    // Load saved theme
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.getElementById('theme-icon').textContent = '☀️';
+      }
+    })();
+
     window.$docsify = {
       name: 'Bible Study',
       repo: '',
