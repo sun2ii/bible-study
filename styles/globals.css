@@ -81,55 +81,62 @@ strong {
   background: #6b7280;
 }
 
-/* Fix left sidebar toggle - ensure proper show/hide behavior */
-.nextra-sidebar-container {
-  transition: width 0.2s ease, transform 0.2s ease, opacity 0.2s ease !important;
-}
-
-/* When sidebar is visible - enforce minimum width */
-.nextra-sidebar-container[data-toggle-animation="show"],
-.nextra-sidebar-container:not([data-toggle-animation="hide"]):not([class*="hidden"]) {
-  min-width: 256px !important;
-  width: 256px !important;
-  opacity: 1 !important;
-}
-
-/* When sidebar is hidden - fully collapse */
-.nextra-sidebar-container[data-toggle-animation="hide"],
-.nextra-sidebar-container.hidden {
-  width: 0 !important;
-  min-width: 0 !important;
-  opacity: 0 !important;
-  overflow: hidden !important;
-  transform: translateX(-100%) !important;
-}
-
-/* Prevent text from wrapping vertically */
-.nextra-sidebar-container nav {
-  min-width: 240px;
-  white-space: nowrap;
-}
-
-/* Ensure menu items don't break */
-.nextra-sidebar-container nav a,
-.nextra-sidebar-container nav button {
-  white-space: normal;
-  word-wrap: break-word;
-}
-
-/* TOC (right sidebar) - hide by default, show on hover */
+/* TOC (right sidebar) toggle functionality */
 .nextra-toc {
-  opacity: 0.3;
-  transition: opacity 0.2s ease;
+  position: relative;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.nextra-toc:hover {
-  opacity: 1;
+/* Toggle button for TOC */
+.toc-toggle-btn {
+  position: absolute;
+  top: 0;
+  left: -32px;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  z-index: 10;
+  transition: all 0.2s ease;
 }
 
-/* Or completely hide TOC - uncomment below to fully hide */
-/*
-.nextra-toc {
-  display: none !important;
+.dark .toc-toggle-btn {
+  border-color: #374151;
+  background: #1f2937;
+  color: #9ca3af;
 }
-*/
+
+.toc-toggle-btn:hover {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.dark .toc-toggle-btn:hover {
+  background: #374151;
+  border-color: #4b5563;
+}
+
+/* TOC hidden state */
+.nextra-toc.toc-hidden .nextra-toc-content {
+  opacity: 0;
+  transform: translateX(20px);
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.nextra-toc.toc-hidden {
+  width: 40px !important;
+  min-width: 40px !important;
+}
+
+/* TOC content wrapper */
+.nextra-toc-content {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
