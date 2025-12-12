@@ -1,0 +1,32 @@
+{
+  "name": "bible-study",
+  "version": "1.0.0",
+  "description": "Personal study notes through Scripture, one chapter at a time.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sun2ii/bibly-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sun2ii/bibly-study/issues"
+  },
+  "homepage": "https://github.com/sun2ii/bibly-study#readme",
+  "dependencies": {
+    "next": "^14.2.0",
+    "nextra": "^3.0.0",
+    "nextra-theme-docs": "^3.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "25.0.1",
+    "@types/react": "19.2.7"
+  }
+}

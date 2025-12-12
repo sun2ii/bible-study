@@ -1,0 +1,135 @@
+/* Custom styles for Bible Study */
+
+/* Dark mode enhancements */
+:root {
+  --primary-hue: 210;
+}
+
+/* Code block styling */
+.dark pre {
+  background-color: #1a1a2e !important;
+}
+
+/* Table styling for dark mode */
+.dark table {
+  border-color: #374151;
+}
+
+.dark th {
+  background-color: #1f2937;
+}
+
+.dark td {
+  border-color: #374151;
+}
+
+/* Better readability for ASCII trees */
+pre code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Progress bar styling */
+.progress-bar {
+  font-family: monospace;
+  letter-spacing: -0.05em;
+}
+
+/* Hebrew text styling */
+[dir="rtl"], .hebrew {
+  font-family: 'SBL Hebrew', 'Times New Roman', serif;
+  direction: rtl;
+}
+
+/* Blockquote styling */
+blockquote {
+  border-left-color: #60a5fa;
+  font-style: italic;
+}
+
+.dark blockquote {
+  border-left-color: #3b82f6;
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+/* One-line cut emphasis */
+strong {
+  color: #60a5fa;
+}
+
+.dark strong {
+  color: #93c5fd;
+}
+
+/* Custom scrollbar for dark mode */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Fix left sidebar toggle - ensure proper show/hide behavior */
+.nextra-sidebar-container {
+  transition: width 0.2s ease, transform 0.2s ease, opacity 0.2s ease !important;
+}
+
+/* When sidebar is visible - enforce minimum width */
+.nextra-sidebar-container[data-toggle-animation="show"],
+.nextra-sidebar-container:not([data-toggle-animation="hide"]):not([class*="hidden"]) {
+  min-width: 256px !important;
+  width: 256px !important;
+  opacity: 1 !important;
+}
+
+/* When sidebar is hidden - fully collapse */
+.nextra-sidebar-container[data-toggle-animation="hide"],
+.nextra-sidebar-container.hidden {
+  width: 0 !important;
+  min-width: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  transform: translateX(-100%) !important;
+}
+
+/* Prevent text from wrapping vertically */
+.nextra-sidebar-container nav {
+  min-width: 240px;
+  white-space: nowrap;
+}
+
+/* Ensure menu items don't break */
+.nextra-sidebar-container nav a,
+.nextra-sidebar-container nav button {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* TOC (right sidebar) - hide by default, show on hover */
+.nextra-toc {
+  opacity: 0.3;
+  transition: opacity 0.2s ease;
+}
+
+.nextra-toc:hover {
+  opacity: 1;
+}
+
+/* Or completely hide TOC - uncomment below to fully hide */
+/*
+.nextra-toc {
+  display: none !important;
+}
+*/
