@@ -6,5 +6,6 @@ export default {
   '04': 'Ch 4 - The Testing',
   '05': 'Ch 5 - The Manifesto',
   '06': 'Ch 6 - The Practice',
+  '07': 'Ch 7 - The Foundation',
   mammon: 'Mammon - Deep Analysis'
 }
