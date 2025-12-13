@@ -7,5 +7,6 @@ export default {
   '05': 'Ch 5 - The Manifesto',
   '06': 'Ch 6 - The Practice',
   '07': 'Ch 7 - The Foundation',
+  '08': 'Ch 8 - The Authority',
   mammon: 'Mammon - Deep Analysis'
 }
