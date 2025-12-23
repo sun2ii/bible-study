@@ -9,6 +9,7 @@ export default {
   '07': 'Ch 7 - Foundation',
   '08': 'Ch 8 - Authority',
   '09': 'Ch 9 - Compassion',
-  '10': 'Ch 10 - Mission',
-  mammon: 'Mammon - Deep Analysis'
+  '010': 'Ch 10 - Mission',
+  '011': 'Ch 11 - Rest',
+  'deep-dives': 'Deep Dives'
 }
