@@ -10,6 +10,7 @@ export default {
   '08': 'Ch 8 - Authority',
   '09': 'Ch 9 - Compassion',
   '010': 'Ch 10 - Mission',
-  '011': 'Ch 11 - Rest',
+  '011': 'Ch 11 - Invitation',
+  '012': 'Ch 12 - Conflict',
   'deep-dives': 'Deep Dives'
 }
