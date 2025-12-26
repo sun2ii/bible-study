@@ -18,6 +18,7 @@ export default function Custom404() {
 
       // Map book names to BibleGateway format
       const bookMap = {
+        genesis: 'Genesis',
         matthew: 'Matthew',
         psalms: 'Psalm',
         proverbs: 'Proverbs'
@@ -66,8 +67,7 @@ export default function Custom404() {
           marginBottom: '2rem',
           lineHeight: '1.6'
         }}>
-          This page is still being written.<br />
-          In the meantime, continue your journey in God's Word:
+          This page is still being written.
         </p>
         <a
           href={linkInfo.url}
