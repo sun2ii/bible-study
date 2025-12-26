@@ -12,5 +12,6 @@ export default {
   '010': 'Ch 10 - Mission',
   '011': 'Ch 11 - Invitation',
   '012': 'Ch 12 - Conflict',
+  '013': 'Ch 13 - Parables',
   'deep-dives': 'Deep Dives'
 }
