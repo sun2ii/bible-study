@@ -14,5 +14,6 @@ export default {
   '012': 'Ch 12 - Conflict',
   '013': 'Ch 13 - Parables',
   '014': 'Ch 14 - Faith & Power',
+  '015': 'Ch 15 - Heart & Faith',
   'deep-dives': 'Deep Dives'
 }
