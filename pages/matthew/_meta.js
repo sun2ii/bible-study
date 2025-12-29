@@ -17,5 +17,6 @@ export default {
   '015': 'Ch 15 - Heart & Faith',
   '016': 'Ch 16 - Authority & Cross',
   '017': 'Ch 17 - Glory & Sonship',
+  '018': 'Ch 18 - Humility, Restoration & Forgiveness',
   'deep-dives': 'Deep Dives'
 }
