@@ -18,5 +18,6 @@ export default {
   '016': 'Ch 16 - Authority & Cross',
   '017': 'Ch 17 - Glory & Sonship',
   '018': 'Ch 18 - Humility, Restoration & Forgiveness',
+  '019': 'Ch 19 - The Cost of the Kingdom',
   'deep-dives': 'Deep Dives'
 }
