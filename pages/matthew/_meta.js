@@ -20,5 +20,7 @@ export default {
   '018': 'Ch 18 - Humility, Restoration & Forgiveness',
   '019': 'Ch 19 - The Cost of the Kingdom',
   '020': 'Ch 20 - Grace, Service & Sight',
+  '021': 'Ch 21 - Authority, Rejection & Transfer',
+  '022': 'Ch 22 - Invitation, Allegiance & Priority',
   'deep-dives': 'Deep Dives'
 }
