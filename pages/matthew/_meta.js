@@ -22,5 +22,8 @@ export default {
   '020': 'Ch 20 - Grace, Service & Sight',
   '021': 'Ch 21 - Authority, Rejection & Transfer',
   '022': 'Ch 22 - Invitation, Allegiance & Priority',
+  '023': 'Ch 23 - Hypocrisy, Woes & Lament',
+  '024': 'Ch 24 - Signs, Coming & Readiness',
+  '025': 'Ch 25 - Readiness, Stewardship & Judgment',
   'deep-dives': 'Deep Dives'
 }
